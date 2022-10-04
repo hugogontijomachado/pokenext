@@ -1,0 +1,54 @@
+/* NAVBAR */
+.navbar {
+    display: flex; /* para que os elementos fiquem ao lado um do outro*/;
+    justify-content: space-between; /*O JSX de retorno do Navbar é um elemento <nav>;
+                                    com duas <div> dentro: uma para o icone e uma para;
+                                    os nomes com os links. Esta opção faz com que estes;
+                                    itens fiquem cada um em um lado da tela*/;
+    align-items: center; /* esta opção alinha os items no centro na VERTICAL */
+    padding: 1em 1.2em; /*1 na horizontal e 1.2 na vertical, a lateral tem maior padding*/;
+    margin-bottom: 2em;
+    background-color: #333;
+    color: #fff;
+}   
+
+
+/* Logo a esquerda */
+.logo {
+    display: flex;
+    justify-content: center; /* pra alinhar na horizontal*/;
+    align-items: center; /* pra alinhar na vertical*/;
+}
+
+.logo h1 {
+    margin-left: 5em; /*pra que o título se afaste um pouco do logo*/
+}
+
+
+/* Link items a direita */
+.link_items {
+    display: flex; /* um do lado do outro*/;
+    list-style: none; /*pra tirar os pontos que vem default nas linhas das listas (<li>)*/;
+}
+
+
+.link_items li {
+    margin-right: 1.3em; /* dar um espaço entre os link items */
+}
+
+.link_items a {
+    color: #FFF; /* cor do texto dos link items */;
+    text-decoration: none; /* retirar o sublinha que vem por default em links (tag <a>) */
+    padding: 5px; 
+    transition: .4s; /* tempo de transição para o hover, evento de passar o mouse por cima, acontecer
+                    /Desta maneira a aplicação fica mais fluida (visualmente) */;
+    border-bottom: 2px solid transparent; /* cria uma borda abaixo (um traço) transparent, pra que possa ;
+                                           ter sua cor alterada e aparacer na tela no hover */;
+}
+
+.link_items a:hover {
+    border-color: #FFF /* cor da borda criada em border-botoom de link_items a */
+}
+
+
+

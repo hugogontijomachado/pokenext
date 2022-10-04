@@ -1,0 +1,10 @@
+* {
+  font-family: Helvetica;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*isto previne que elementos que, por default, etrapolam a borda do html, não mais o façam  e passem a obedecer o limite da borda */
+}
+
+.main-container{
+  min-height: 70vh
+}

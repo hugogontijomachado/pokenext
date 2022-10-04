@@ -1,0 +1,25 @@
+.title_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.title {
+    color: #e33d33;
+    text-align: center;
+    font-size: 3em;
+    margin-right: .4em;
+}
+
+.title span {
+    color: #333;
+}
+
+.pokemon_container {
+    display: flex; /* os items ficarão um do lado do outro */
+    flex-wrap: wrap; /* ele vai quebrar a linha quando chegar na largura máxima */
+    justify-content: space-between; /* cada um ficará espaçado igualmente um do outro */
+    max-width: 1100px;
+    margin: 0 auto; /* centralizar todo o conteudo da div na horizontal */
+}
